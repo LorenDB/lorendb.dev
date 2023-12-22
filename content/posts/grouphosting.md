@@ -2,14 +2,13 @@
 title = 'Grouphosting'
 date = 2023-12-22T15:32:27-05:00
 tags = ["selfhosting"]
-draft = true
 +++
 
-I've been diving into the world of selfhosting recently, but there's a catch: it's not just me. I'm doing it with some friends. This, of course, is fun, but I think the term "selfhosting" is a bit of a misnomer here; furthermore, I think that there is a powerful new way of selfhosting that could be enabled here.
+I've been diving into the world of selfhosting recently, but there's a catch: it's not just me. I'm doing it with some friends. This, of course, is fun, but I think the term "selfhosting" is a bit of a misnomer here; furthermore, I think that there is a powerful new type of selfhosting here that could change the way people selfhost.
 
 ## Grouphosting
 
-I've been calling this concept "grouphosting". What is grouphosting? Basically, it's comparable to selfhosting, except there are multiple administrators. What advantages does this have? The immediately obvious answer is that server problems can (hopefully) be resolved more quickly; the more administrators you have in your group, the more likely it is that one of them will be available when the inevitable server problem occurs.
+I've been calling this concept "grouphosting". What is grouphosting? It's fairly similar to selfhosting, except there are multiple administrators. What advantages does this have? The immediately obvious answer is that server problems can (hopefully) be resolved more quickly; the more administrators you have in your group, the more likely it is that one of them will be available when the inevitable server problem occurs.
 
 However, there's another powerful feature that is available only to grouphosters: resilient backups on a budget. In commercial environments where money is not a big problem and preserving your data is vital, sysadmins set up [3-2-1 backups](https://www.veritas.com/information-center/3-2-1-backup-rule) for maximum resiliency, which includes geographically separate data copies. Some companies already have multiple locations available to locate backup servers; others simply purchase storage from providers like Backblaze or AWS to give themselves a separate datacenter. However, for individual selfhosters, geographically redundant might mean "My server rack in the basement syncs to an old NAS in my attic."
 
@@ -17,19 +16,19 @@ When you grouphost, you are involving multiple people who live at separate geogr
 
 Closely related to this is the concept of load balancing. For the purposes of this blog post, let's say you're deploying Matrix. Matrix doesn't need a lot of resources for an instance that will only serve one user; a few gigs of RAM and a fairly low-power CPU would suffice. However, assuming you're selfhosting on a physical machine at your house, you probably have more than just a few gigs of RAM - even the Raspberry Pi 5 comes with a minimum of 4 GB. If you're using an old desktop or a dedicated server, you almost certainly will have 8 GB or more. This is plenty of resources to run a Matrix instance with more than just one user. By grouphosting, you can keep your machine just to a Matrix server, but now you'll be utilizing its extra capacity with accounts for your entire group, and in return you'll get access to the other services the group is hosting.
 
+## I don't trust my friends on my server!
+
+I understand exactly where you're coming from. It's good to keep integrity of your system at the forefront; if you aren't comfortable with grouphosting, it's your right to refuse others access to your server.
+
+## What if I can't find anybody at all?
+
+That's OK! Some people may need to just selfhost. I just think that it makes sense to grouphost when possible.
+
 ## I bought a domain that is based around my name. Does the whole group have to use it?
 
 If they want to, sure; if they don't want to, tell them to buy their own domain. After all, you can get domains for a lot of great TLDs (including .com, .xyz, .dev, and .foo, to name a few) for around $10 per year or less, so it won't break the bank to share the cost of a domain.
 
 Of course, you can always host your own stuff (like a blog) under any domain you want.
-
-## What if I can't find anybody?
-
-That's OK! Some people may need to just selfhost.
-
-## I don't trust my friends on my server!
-
-I understand exactly where you're coming from. It's good to keep integrity of your system at the forefront; if you aren't comfortable with grouphosting, it's your right to refuse others access to your server.
 
 ## OK, you've got me convinced. How should I start?
 
@@ -42,3 +41,5 @@ Once you're done setting up your server(s), don't just rest on your laurels. Be 
 ## Fin
 
 I hope that at least some part of this made you go "yeah, that actually makes sense". While I doubt this post will have a huge impact, it might start some other person out into their own grouphosting, and if that happens, I'm happy. :)
+
+{{< chat grouphosting >}}
