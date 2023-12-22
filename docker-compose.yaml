@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  server:
+    #image: klakegg/hugo
+    image: hugomods/hugo
+    container_name: hugo-loren
+    command: hugo server --bind 0.0.0.0 --baseURL=https://lorendb.dev --appendPort=false
+    volumes:
+      - ".:/src"
+    environment:
+      - HUGO_BASEURL=https://lorendb.dev
+
+networks:
+  default:
+    name: proxiable
+    external: true

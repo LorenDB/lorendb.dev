@@ -1,0 +1,17 @@
+baseURL = "https://lorendb.dev"
+languageCode = 'en-us'
+title = "Loren's blog"
+theme = "m10c"
+paginate = 8
+
+[params]
+  author = "Loren Burkholder"
+  description = "Programming, selfhosting, and general tech stuff"
+  menu_item_separator = " - "
+  avatar = "/avatar.jpeg"
+  [[params.social]]
+    icon = "github"
+    name = "Github"
+    url = "https://github.com/LorenDB"
+
+
