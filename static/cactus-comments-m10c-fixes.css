@@ -1,0 +1,9 @@
+:root {
+	--cactus-text-color--soft: silver;
+	--cactus-border-color: #57cc8a;
+	--cactus-button-text-color: #fff;
+	--cactus-button-color: #57cc8a;
+	--cactus-button-color--strong: #4caa75;
+	--cactus-button-color--stronger: #595959;
+	--cactus-login-form-text-color: #ccc;
+}
