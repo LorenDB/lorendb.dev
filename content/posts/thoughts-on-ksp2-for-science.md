@@ -1,7 +1,6 @@
 +++
 title = 'Thoughts on KSP2 For Science!'
 date = 2023-12-26T09:20:21-05:00
-draft = true
 tags = ["gaming", "ksp2"]
 +++
 
