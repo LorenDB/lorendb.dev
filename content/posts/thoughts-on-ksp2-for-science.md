@@ -63,12 +63,16 @@ manually edit the craft file to override the vessel state.
 
 ## The ugly
 
-I have two things to point out here that fall into the "ugly" category. First, camera behavior is buggy.
+I have a few things to point out here that fall into the "ugly" category. First, camera behavior is buggy.
 When you switch to the map view and back, the camera always resets its view. This isn't too bad by itself,
 but the default camera view for large craft will often be clipped into the middle of the vehicle. This
 means that every time you switch to the map and back, you have to zoom out a bunch to see where you even are.
 
-The other ugly thing? Jebediah Kerman is no longer selected by default as the first kerbonaut on any
+Second, sometimes clouds render as black during the night. I will add a massive disclaimer that I only
+saw this once, and I didn't try to reproduce it, but the fact remains that as I landed, the clouds were
+completely black, which didn't happen before For Science!
+
+The final ugly thing? Jebediah Kerman is no longer selected by default as the first kerbonaut on any
 mission! What is this world coming to?!
 
 ## The takeaway
