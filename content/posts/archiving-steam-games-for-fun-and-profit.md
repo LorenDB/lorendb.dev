@@ -87,4 +87,8 @@ The app currently is somewhat limited: there's no functionality to reconfigure t
 
 This is a fun project that is helping get me hooked on data hoarding. If you start using my app to help hoard your own games, please leave a comment below! I'd love seeing how many gigabytes (or terabytes) of games you're hoarding.
 
+## Updates
+
+Shortly after writing this post, I've added some logging to the app. It ain't pefect, but it ain't terrible either.
+
 {{< chat archiving-steam-games-for-fun-and-profit >}}
