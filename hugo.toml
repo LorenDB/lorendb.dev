@@ -14,8 +14,14 @@ paginate = 8
     name = "GitHub"
     url = "https://github.com/LorenDB"
   [[params.social]]
+    icon = "hash"
+    name = "Matrix"
+    url = "https://matrix.to/#/@lorendb:nheko.im"
+  [[params.social]]
+    icon = "mail"
+    name = "Email"
+    url = "mailto:computersemiexpert@outlook.com"
+  [[params.social]]
     icon = "rss"
     name = "RSS feed"
     url = "https://lorendb.dev/index.xml"
-
-
