@@ -3,12 +3,15 @@ languageCode = 'en-us'
 title = "Loren's blog"
 theme = "m10c"
 paginate = 8
+copyright = "© Loren Burkholder"
 
 [params]
-  author = "Loren Burkholder"
   description = "Programming, selfhosting, and general tech stuff"
   menu_item_separator = " - "
   avatar = "/avatar.jpeg"
+  author.name = "Loren Burkholder"
+  author.link = "https://lorendb.dev"
+  author.email = "computersemiexpert@outlook.com"
   [[params.social]]
     icon = "github"
     name = "GitHub"
