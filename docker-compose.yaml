@@ -6,12 +6,14 @@ services:
     restart: unless-stopped
     container_name: hugo-loren
     command: hugo server --bind 0.0.0.0 --baseURL=https://lorendb.dev --appendPort=false
+    network_mode: host
     volumes:
       - ".:/src"
     environment:
       - HUGO_BASEURL=https://lorendb.dev
 
-networks:
-  default:
-    name: proxiable
-    external: true
+  watchtower:
+    image: containrrr/watchtower
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
