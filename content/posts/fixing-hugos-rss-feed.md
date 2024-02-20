@@ -52,4 +52,11 @@ You can find my entire RSS template [here](https://github.com/LorenDB/lorendb.de
 from the future may wish to check out this [permalink](https://github.com/LorenDB/lorendb.dev/blob/d757e70b762843f2efc45ee4d7c01a263b004d17/layouts/_default/rss.xml) in case
 I completely redo my template and you need the original for some reason.
 
+## An update from the next day
+
+The morning after I published this post, I noticed that Hugo is also truncating the contents of RSS feeds, so anybody using a feed reader on this blog would only see the first
+paragraph or so of each post. This is an absolute crime in the realm of feed readers; it forces people to leave their feed reader for an external site to read the post. Being
+lazy, I copied [somebody else's approach](https://www.godo.dev/tutorials/hugo-full-text-rss/) of telling Hugo to use the post `.Content` instead of the `.Summary`. However, I
+also found out (the hard way) that you must keep the call to `transform.XMLEscape`; otherwise, your RSS feed will probably break when others try to add it to their feed readers.
+
 {{< chat fixing-hugos-rss-feed >}}
