@@ -49,9 +49,9 @@
     <link>{{ .Permalink }}</link>
     <description>Recent content {{ if ne .Title .Site.Title }}{{ with .Title }}in {{ . }} {{ end }}{{ end }}on {{ .Site.Title }}</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>{{ site.Language.LanguageCode }}</language>{{ with $authorName }}
-    <managingEditor>{{.}}{{ with $authorEmail }} ({{ . }}){{ end }}</managingEditor>{{ end }}{{ with $authorName }}
-    <webMaster>{{ . }}{{ with $authorEmail }} ({{ . }}){{ end }}</webMaster>{{ end }}{{ with .Site.Copyright }}
+    <language>{{ site.Language.LanguageCode }}</language>{{ with $authorEmail }}
+    <managingEditor>{{.}}{{ with $authorName }} ({{ . }}){{ end }}</managingEditor>{{ end }}{{ with $authorEmail }}
+    <webMaster>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</webMaster>{{ end }}{{ with .Site.Copyright }}
     <copyright>{{ . }}</copyright>{{ end }}{{ if not .Date.IsZero }}
     <lastBuildDate>{{ (index $pages.ByLastmod.Reverse 0).Lastmod.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
     {{- with .OutputFormats.Get "RSS" }}
@@ -61,8 +61,9 @@
     <item>
       <title>{{ .Title }}</title>
       <link>{{ .Permalink }}</link>
-      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
-      {{- with $authorName }}<author>{{ . }}</author>{{ end }}
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>{{- with $authorEmail }}
+      <author>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</author>{{ end }}{{- with $authorName }}
+      <dc:creator>{{ . }}</dc:creator>{{ end }}
       <guid>{{ .Permalink }}</guid>
       <description>{{ .Content | transform.XMLEscape | safeHTML }}</description>
       {{ if isset .Params "tags" -}}
