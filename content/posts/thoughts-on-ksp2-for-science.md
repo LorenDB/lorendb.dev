@@ -2,6 +2,7 @@
 title = 'Thoughts on KSP2 For Science!'
 date = 2023-12-26T09:20:21-05:00
 tags = ["gaming", "ksp2"]
+images = ["images/ksp2-screenshots/for-science-reentry-heating.jpg"]
 +++
 
 [Kerbal Space Program 2](https://www.kerbalspaceprogram.com/games-kerbal-space-program-2) had its first
@@ -29,7 +30,7 @@ Another huge part of For Science! is the addition of a thermals system. The KSP2
 beautiful reentry effect. Here's the thermals on reentry from Minmus (this was after a number of aerobraking
 passes, so my actual velocity wasn't too high):
 
-![A capsule reentering Kerbin's atmosphere at sunset](/images/ksp2-screenshots/for-science-reentry-heating.jpg)
+![A capsule reentering Kerbin's atmosphere at sunset](https://lorendb.dev/images/ksp2-screenshots/for-science-reentry-heating.jpg)
 
 While some people have reported bugs with thermals, I'm happy to report I haven't encountered any yet.
 

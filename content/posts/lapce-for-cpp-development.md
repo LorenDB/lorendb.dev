@@ -2,6 +2,7 @@
 title = 'Lapce for C++ Development'
 date = 2024-02-18T23:08:00-05:00
 tags = ["ide", "review", "c++"]
+images = ["images/lapce/lapce-alpaka.png"]
 +++
 
 On February 18, [Lapce](https://lapce.dev) hit [number one on Hacker News](https://news.ycombinator.com/item?id=39421090). I was immediately intrigued to see
@@ -112,7 +113,7 @@ error popup declaring that the clangd extension couldn't retrieve an artifact. W
 Fortunately, you can configure it with the path to your already-installed clangd. After doing so, I was rewarded with a fairly usable C++ experience. Here's how Lapce
 looks with the code for [Alpaka](https://invent.kde.org/utilities/alpaka) open:
 
-![The Alpaka source code open in Lapce](/images/lapce/lapce-alpaka.png)
+![The Alpaka source code open in Lapce](https://lorendb.dev/images/lapce/lapce-alpaka.png)
 
 However, it wasn't all smooth sailing. I immediately realized that Lapce displays [inlay hints](https://www.jetbrains.com/help/idea/inlay-hints.html) when it has enough
 information available to do so. I find inlay hints incredibly annoying, so I had to uncover the setting to turn them off. Another unfortunate realization was that the C++
