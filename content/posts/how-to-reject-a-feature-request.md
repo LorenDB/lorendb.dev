@@ -24,7 +24,7 @@ You may be tempted to tell the user off for suggesting such a clearly flawed and
 that nobody but you will ever use! If you want it so bad, why don't you just fork the project and implement it yourself?
 
 Here's the problem: you're establishing yourself as an opinionated, self-centered person who will only implement features that you will use yourself. Now, to be clear, it's not wrong
-to implement features just for yourself. This is referred to as [annoyance-driven development](https://nheko.io/notes/9n4dz70ktmu0ozzu). However, a good maintainer wlil put some
+to implement features just for yourself. This is referred to as [annoyance-driven development](https://nheko.io/notes/9n4dz70ktmu0ozzu). However, a good maintainer will put some
 effort into implementing features to make life easier for others.
 
 ## The right way to reject a feature request
