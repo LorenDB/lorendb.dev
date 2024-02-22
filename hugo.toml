@@ -12,6 +12,7 @@ copyright = "© Loren Burkholder"
   author.name = "Loren Burkholder"
   author.link = "https://lorendb.dev"
   author.email = "computersemiexpert@outlook.com"
+  images = ["images/opengraph-placeholder.png"]
   [[params.social]]
     icon = "github"
     name = "GitHub"
