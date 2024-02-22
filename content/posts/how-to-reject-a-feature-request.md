@@ -87,7 +87,7 @@ As the discussion begins to taper off, @Tcll acknowledges @deepbluev7's handling
 > at least this was a much more respectful issue, and I love it when things go this way
   even if neither of us can reach a conclusion, I'd rather it end with respect than enemies being made out of it
 
-Clearly, some @deepbluev7's responses would not be appropriate if this were a corporate support desk, but this isn't a corporate support desk. This is an individual volunteer whose personal
+Clearly, some of @deepbluev7's responses would not be appropriate if this were a corporate support desk, but this isn't a corporate support desk. This is an individual volunteer whose personal
 time is being taken up by this discussion, and the resulting frustration is completely understandable. However, at no point did @deepbluev7 veer into the realm of blatant name-calling or
 violent attacks.
 
