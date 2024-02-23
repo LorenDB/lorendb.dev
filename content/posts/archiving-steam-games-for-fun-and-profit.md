@@ -16,6 +16,8 @@ Why wouldn't I do this? If you think I'm crazy, just go read [r/DataHoarder](htt
 
 Seriously, while I don't expect Steam to disappear tomorrow, there is precedent for games to be removed from the platform; many of the original games on the platform have been removed. The oldest game still available (counting by which date it was made available on Steam) is the original [Counterstrike](https://store.steampowered.com/app/10) with a game ID of 10. Games 1 through 9 aren't on the platform anymore, and I'm sure they are far from the only games deleted from the platform. Archiving games allows me to avoid losing games that are removed from Steam. Also, sometimes enthusiasts like to be able to access old versions of games; one of the top posts of all time on r/DataHoarder is about [somebody who hoarded an old Minecraft alpha](https://www.reddit.com/r/DataHoarder/comments/o9cnj3/one_womans_quest_to_never_delete_anything_allowed/), giving Minecraft enthusiasts a chance at taking a more complete look at the evolution of the game.
 
+> Update (2/23/2024): it turns out that I am wrong on this point. Games may be delisted from Steam, but they are not deleted. If you own the game, you can still download it. Also, since Steam numbers games by tens, the original Counterstrike *is* the first listed game on Steam. Apologies for this!
+
 ## A naïve bash script
 
 My first approach was to create a bash script to wrap SteamCMD with a nice syntax. Of course, I also wanted to bypass the interactive prompt. Let's go through what I ended up building:
