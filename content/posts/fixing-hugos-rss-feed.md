@@ -64,4 +64,14 @@ also found out (the hard way) that you must keep the call to `transform.XMLEscap
 
 I also realized that my original `<author>` implementation didn't meet RSS spec, so I modified it to come back in line with the spec.
 
+## Update (2/24/2024)
+
+I've realized from [this HN thread](https://news.ycombinator.com/item?id=39495285) that using `<dc:creator>` requires a modification to the `<rss>` element:
+
+``` xml
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+```
+
+This will actually import the appropriate RSS namespace to provide `<dc:creator>`. Without this, some readers like Thunderbird would fail.
+
 {{< chat fixing-hugos-rss-feed >}}
