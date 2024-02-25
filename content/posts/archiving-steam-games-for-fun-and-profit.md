@@ -2,6 +2,7 @@
 title = 'Archiving Steam games for fun and profit'
 date = 2024-01-03T23:27:24-05:00
 tags = ["gaming", "selfhosting", "data-hoarding"]
+description = "Why do I do this to myself? I have no idea. Anyway, let's learn how to eat disk space."
 +++
 
 > tldr: if you want to create an archive of all your Steam games, check out [download-steam-games](https://github.com/LorenDB/download-steam-games) on my GitHub. It has minimal documentation, but you should be able to get it running without too much trouble.

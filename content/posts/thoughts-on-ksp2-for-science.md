@@ -3,6 +3,7 @@ title = 'Thoughts on KSP2 For Science!'
 date = 2023-12-26T09:20:21-05:00
 tags = ["gaming", "ksp2"]
 images = ["images/ksp2-screenshots/for-science-reentry-heating.jpg"]
+description = "It's got science! It's got fire! It's got bugs!"
 +++
 
 [Kerbal Space Program 2](https://www.kerbalspaceprogram.com/games-kerbal-space-program-2) had its first

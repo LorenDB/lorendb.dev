@@ -2,6 +2,7 @@
 title = 'How to reject a feature request'
 date = 2024-02-21T21:40:00-05:00
 tags = ["opensource"]
+description = "Surprisingly, you probably should be nice to other people."
 +++
 
 Open-source maintainers go through a lot. They have to deal with users who feel entitled to having their bugs fixed before the other bugs, contributers who submit pull requests of

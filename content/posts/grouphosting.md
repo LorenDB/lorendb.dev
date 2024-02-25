@@ -2,6 +2,7 @@
 title = 'Grouphosting'
 date = 2023-12-22T15:32:27-05:00
 tags = ["selfhosting"]
+description = "It's like multiplayer, but for selfhosting! Requires one or more friends; batteries not included."
 +++
 
 I've been diving into the world of selfhosting recently, but there's a catch: it's not just me. I'm doing it with some friends. This, of course, is fun, but I think the term "selfhosting" is a bit of a misnomer here; furthermore, I think that there is a powerful new type of selfhosting here that could change the way people selfhost.

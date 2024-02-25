@@ -3,6 +3,7 @@ title = 'Lapce for C++ Development'
 date = 2024-02-18T23:08:00-05:00
 tags = ["ide", "review", "c++"]
 images = ["images/lapce/lapce-alpaka.png"]
+description = "I want to love this IDE so bad, but I might need to give it some time..."
 +++
 
 On February 18, [Lapce](https://lapce.dev) hit [number one on Hacker News](https://news.ycombinator.com/item?id=39421090). I was immediately intrigued to see

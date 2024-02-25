@@ -2,6 +2,7 @@
 title = "Let's Ban SMS 2FA"
 date = 2024-02-11T16:08:00-05:00
 tags = ["security", "rant"]
+description = "SMS 2FA is like playing security roulette, and nobody seems to care."
 +++
 
 There, I said it.
