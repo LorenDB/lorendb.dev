@@ -2,7 +2,7 @@ baseURL = "https://lorendb.dev"
 languageCode = 'en-us'
 title = "Loren's blog"
 theme = "m10c"
-paginate = 8
+paginate = 12
 copyright = "© Loren Burkholder"
 
 [params]
