@@ -31,7 +31,11 @@ Another huge part of For Science! is the addition of a thermals system. The KSP2
 beautiful reentry effect. Here's the thermals on reentry from Minmus (this was after a number of aerobraking
 passes, so my actual velocity wasn't too high):
 
-![A capsule reentering Kerbin's atmosphere at sunset](https://lorendb.dev/images/ksp2-screenshots/for-science-reentry-heating.jpg)
+{{< figure
+    src="https://lorendb.dev/images/ksp2-screenshots/for-science-reentry-heating.jpg"
+    alt="A capsule reentering Kerbin's atmosphere at sunset"
+    title="Isn't it just gorgeous?"
+>}}
 
 While some people have reported bugs with thermals, I'm happy to report I haven't encountered any yet.
 

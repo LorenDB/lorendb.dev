@@ -114,7 +114,10 @@ error popup declaring that the clangd extension couldn't retrieve an artifact. W
 Fortunately, you can configure it with the path to your already-installed clangd. After doing so, I was rewarded with a fairly usable C++ experience. Here's how Lapce
 looks with the code for [Alpaka](https://invent.kde.org/utilities/alpaka) open:
 
-![The Alpaka source code open in Lapce](https://lorendb.dev/images/lapce/lapce-alpaka.png)
+{{< figure
+    src="https://lorendb.dev/images/lapce/lapce-alpaka.png"
+    alt="The Alpaka source code open in Lapce"
+>}}
 
 However, it wasn't all smooth sailing. I immediately realized that Lapce displays [inlay hints](https://www.jetbrains.com/help/idea/inlay-hints.html) when it has enough
 information available to do so. I find inlay hints incredibly annoying, so I had to uncover the setting to turn them off. Another unfortunate realization was that the C++
