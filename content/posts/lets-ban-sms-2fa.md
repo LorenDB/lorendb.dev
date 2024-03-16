@@ -9,17 +9,21 @@ There, I said it.
 
 Now that I've got that out of the way, let's talk a bit about why we should actually ban SMS 2FA.
 
+> A quick note: I've rewritten this post to present a more balanced view of the topic. You can find the old version on the Internet Archive.
+
 ## The problems
 
 SMS 2FA is something of a paradox in and of itself. Two-factor authentication is generally positioned as a way to increase your security; however, [SMS messaging](https://en.wikipedia.org/wiki/SMS) is inherently insecure, since it is unencrypted and SMS messages are publicly broadcast wirelessly. This means that bad actors who are physically near to you can trivially snoop on 2FA codes that are texted to you.
 
 However, unencrypted message broadcasting is not the only concern here. [SIM-swapping](https://en.wikipedia.org/wiki/SIM_swap_scam) is another method that can allow an attacker to gain access to your SMS messages; in this sort of attack, the attacker calls your phone company, claims that they are you, and asks to swap your phone number over to their SIM card. While the FCC is [taking action to fight SIM-swapping](https://www.theverge.com/2023/7/11/23791183/fcc-sim-swapping-port-out-phone-hijacking-security-protection), it is still very much a relevant attack; in fact, last month (January 2024) the U.S. Securities and Exchange Commission had its Twitter (yes, I'm still calling it Twitter) account [hacked](https://www.techradar.com/pro/sec-reveals-how-its-twitter-account-was-hacked-and-its-rather-embarrassing) in a SIM swap attack.
 
+To be fair, SIM swapping is not a trivial attack. It generally requires social engineering to complete, which makes it less useful for drive-by attackers. However, [eSIM swapping](https://www.bleepingcomputer.com/news/security/sim-swappers-hijacking-phone-numbers-in-esim-attacks/) is starting to gain popularity. This attack is less complex to complete, as it doesn't require social engineering the phone company. You just need to get the victim's login credentials, log into their phone provider account, and swap the eSIM.
+
 ## Companies don't care
 
-You might be wondering why this is such a big problem. Sure, SMS is offered as a 2FA method on many sites, but you don't need to enable it, right? Well, it turns out that platforms like PayPal and Amazon don't care that SMS 2FA is insecure. If you want to set up any form of 2FA for your account, you are forced to set up SMS as a fallback option. This makes their 2FA support little more than a farce, given that anybody attacking your Amazon or PayPal account can override your 2FA using a SIM swap. The reasoning for this? "If you lose your 2FA device, we'll text you a code to recover access to your account."
+You might be wondering why this is such a big problem. Sure, SMS is offered as a 2FA method on many sites, but you don't need to enable it, right? Well, it turns out that platforms like PayPal and Amazon don't care that SMS 2FA is insecure. If you want to set up any form of 2FA for your account, you are forced to set up SMS as a fallback option. This makes their 2FA support little more than a farce, given that anybody attacking your Amazon or PayPal account can theoretically override your 2FA by intercepting your SMS. The reasoning for this? "If you lose your 2FA device, we'll text you a code to recover access to your account."
 
-(A bit more on the account recovery: given a valid email address, PayPal will happily send you a text to verify a password reset, and Amazon lets you reset your password *with just a phone number*. This means that as long as you know that somebody has an Amazon account that may be linked to their phone number, a simple SIM swapping attack or even snooping on local text messages can easily give you full access to somebody's Amazon account.)
+(A bit more on the account recovery: given a valid email address, PayPal will happily send you a text to verify a password reset, and Amazon lets you reset your password *with just a phone number*. This means that as long as you know that somebody has an Amazon account that may be linked to their phone number, intercepting their SMS could give you full access to their Amazon account.)
 
 Even for the services that aren't forcing SMS 2FA down your throat, SMS is still presented as an option on many sites. Its ease of use undoubtedly has led many people to say "Oh, I'll just use SMS since it's easier", which leaves those people more vulnerable to attack.
 
@@ -44,9 +48,9 @@ How can we combat SMS 2FA? It turns out that there's a surprising amount of thin
 1. If you live in the US, write to your congressman to urge him to introduce legislation banning the use of unencrypted message-based 2FA (and mention the SEC Twitter hack to show that the government is susceptible to this attack). If you don't live in the US, write to whoever represents you in your government (e.g. EU residents can write their MEP). While this may seem like a bit of a long shot, it's possible that your message could result in an actual law. EU residents are especially likely to succeed, given the EU's historical stance on legislating sane tech laws (i.e. the [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation) and the [DMA](https://en.wikipedia.org/wiki/Digital_Markets_Act)).
 1. Share this post, or if you have your own blog, write your own post on this subject! The more publicity this issue gets, the better.
 
-## A quick security note that didn't fit anywhere else
+## The part where I backtrack a bit
 
-While SMS 2FA is bad, it is at least a little better than no 2FA at all, since it can function as a deterrent to a casual hacker. However, you should still generally avoid SMS 2FA. Also, please remember that 2FA doesn't mean you can use weak passwords!
+Having said all of this, is SMS 2FA completely evil? The answer is actually complex. First, while SMS 2FA is insecure, it is better than no 2FA at all, since it can function as a deterrent to a casual hacker. Second, it is user-friendly. TOTP, passkeys, and physical security keys all tend to be more effort to learn to use than a simple SMS verification scheme. To successfully remove SMS 2FA, we'll have to educate the general public on how to use the alternatives or create a truly simple-to-use alternative. I do think that passkeys could become a good solution, however, as device and browser makers have put a lot of effort into making them a seamless option.
 
 ## Conclusion
 
