@@ -50,7 +50,7 @@ Unfortunately, there's not a lot of those out there today. But that could change
 
 > Lenovo secretly want Linux to catch on big-time, because they HATE the amount of leverage Microsoft have over them due to the ubiquity of Windows on so many of their devices. But they have to be careful to not embrace Linux too openly for fear of Microsoft retaliation. So they're in a bit of a catch-22 situation. \[...]
 >
-> - [mindcrime](https://news.ycombinator.com/user?id=mindcrime)
+> \- [mindcrime](https://news.ycombinator.com/user?id=mindcrime)
 
 If mindcrime is right, Lenovo would be eager to produce Linux hardware the moment Linux seemed to be gaining significant market share (and indeed, [they already do make some Linux machines](https://www.lenovo.com/us/en/d/linux-laptops-desktops/)). However, Lenovo is going to need something more than a report of 4% Linux usage worldwide from Statcounter before they pull the trigger on Linux devices. And for that something, we need to look to Valve.
 
