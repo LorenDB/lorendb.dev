@@ -4,6 +4,7 @@ title = "Loren's blog"
 theme = "m10c"
 paginate = 12
 copyright = "© Loren Burkholder"
+capitalizeListTitles = false
 
 [params]
   description = "Programming, selfhosting, and general tech stuff"
